@@ -20,14 +20,14 @@ def signup():
         password1= request.form.get('confirm-password')
 
         if len(email) < 4:
-            flash("Email must be greater than 4 characters", category='error')
+            flash("Email must be greater than 3 characters.", category='error')
         elif len(name) < 2:
-            flash("First name must be greater than 1  character.", category='error')
+            flash("First name must be greater than 1 character.", category='error')
         elif password != password1:
             flash("Passwords don\'t match.", category='error')
         elif len(password) < 7:
-            flash("Password must be atleast 7 characters", category='error')
+            flash("Password must be atleast 7 characters.", category='error')
         else:
-            flash("Account Created", category='success')
+            flash("Account Created!", category='success')
     return render_template("signUp.html")
 
