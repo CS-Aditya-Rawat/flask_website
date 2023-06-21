@@ -1,7 +1,6 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from os import path
-
 db = SQLAlchemy()
 DB_NAME='database.db'
 
@@ -13,6 +12,7 @@ def create_app():
 
     from .views import views
     from .auth import auth
+    from .github import Github
 
     app.register_blueprint(views, url_prefix="/")
     app.register_blueprint(auth, url_prefix="/")
@@ -20,7 +20,7 @@ def create_app():
     from .models import User, Note
 
     create_database(app)
-    
+    app.register_blueprint(Github, url_prefix="/github_login")
 
     return app
     
