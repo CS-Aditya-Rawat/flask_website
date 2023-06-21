@@ -22,6 +22,7 @@
     </a>
     <div class="collapse navbar-collapse" id="navbarScroll">
       <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        {% if user.is_authenticated %}
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
@@ -29,9 +30,16 @@
           <a class="nav-link" href="#">About Us</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="/logout">Log Out</a>
+        </li>
+        {% else %}
+        <li class="nav-item">
           <a class="nav-link" href="/sign-up">SignUp</a>
         </li>
-
+        <li class="nav-item">
+          <a class="nav-link" href="/login">Log In</a>
+        </li>
+        {% endif %}
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -40,24 +48,7 @@
     </div>
   </div>
 </nav>
-    <!-- <nav class='navbar navbar-expand-lg navbar-dark bg-dark'> -->
-    <!--   <button -->
-    <!--     class="navbar-toggler" -->
-    <!--     type="button" -->
-    <!--     data-toggle="collapse" -->
-    <!--     data-target="#navbar" -->
-    <!--   > -->
-    <!--     <span class="navbar-toggler-icon"></span> -->
-    <!--   </button> -->
-    <!--   <div class="collapse navbar-collapse" id="navbar"> -->
-    <!--     <div class="navbar-nav"> -->
-    <!--       <a class="nav-item nav-link" id="home" href="/">Home</a> -->
-    <!--       <a class="nav-item nav-link" id="logout" href="/logout">Logout</a> -->
-    <!--       <a class="nav-item nav-link" id="login" href="/login">Login</a> -->
-    <!--       <a class="nav-item nav-link" id="signUp" href="/sign-up">Sign Up</a> -->
-    <!--     </div> -->
-    <!--   </div> -->
-    <!-- </nav> -->
+
     {% with messages = get_flashed_messages(with_categories=true) %}
       {% if messages %}
         {% for category, message in messages %}
