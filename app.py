@@ -5,8 +5,8 @@ import os
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "1234KEY"
 os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
-GITHUB_CLIENT_ID = "c22bcb448fe425add386"
-GITHUB_CLIENT_SECRET = "b813d96f548d9117d64f3742cf5e32ba2f1d14eb"
+GITHUB_CLIENT_ID = ""
+GITHUB_CLIENT_SECRET = ""
 
 github_blueprint = make_github_blueprint(client_id=GITHUB_CLIENT_ID,
                                          client_secret=GITHUB_CLIENT_SECRET)
