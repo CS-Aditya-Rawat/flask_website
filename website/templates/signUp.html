@@ -3,27 +3,27 @@
 
 {% block content %}
 
-<div class="sign-up d-flex justify-content-center mt-3 mb-5">
+<div class="auth-box">
     <form action="" method="POST">
-        <h1>Sign Up</h1>
-        <div class="form-details mt-4 mb-2">
+        <h1 class="auth-box-title">Sign Up</h1>
+        <div class="input-field">
             <label for="firstName">First Name</label>
-            <input type="text" name="name" id="name" class="form-control" placeholder="Your name">
+            <input type="text" name="name" id="name" placeholder="Your name" class="input-textarea">
         </div>
-        <div class="form-details mt-2 mb-2">
+        <div class="input-field">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" class="form-control" placeholder="Enter Your Email Here">
+            <input type="email" name="email" id="email" placeholder="Enter Your Email Here" class="input-textarea">
         </div>
-        <div class="form-details mt-2 mb-2">
+        <div class="input-field">
             <label for="password">Password</label>
-            <input type="password" name="password" id="password" class="form-control" placeholder="Enter Password">
+            <input type="password" name="password" id="password" placeholder="Enter Password" class="input-textarea">
         </div>
-        <div class="form-details mt-2 mb-4">
+        <div class="input-field">
             <label for="confirm-password">Confirm Password</label>
-            <input type="password" name="confirm-password" id="confirm-password" class="form-control" placeholder="Confirm Password">
+            <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" class="input-textarea">
         </div>
-        <div class="button d-flex justify-content-center">
-            <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="login-signup-btn-container">
+            <button type="submit" class="login-signup-btn">Sign Up</button>
         </div>
         <div class="button d-flex justify-content-center">
           <a href="github_login"> Sign Up with github</a>

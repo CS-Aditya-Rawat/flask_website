@@ -3,19 +3,19 @@
 
 {% block content %}
 
-<div class="sign-up d-flex justify-content-center mt-5 mb-5">
+<div class="auth-box">
     <form action="" method="POST">
-        <h1>Login</h1>
-        <div class="form-details mt-2 mb-2">
+        <h1 class="auth-box-title">Login</h1>
+        <div class="input-field">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" class="form-control" placeholder="Enter Your Email Here">
+            <input type="email" name="email" id="email" placeholder="Enter Your Email Here" class="input-textarea">
         </div>
-        <div class="form-details mt-2 mb-2">
+        <div class="input-field">
             <label for="password">Password</label>
-            <input type="password" name="password" id="password" class="form-control" placeholder=" ">
+            <input type="password" name="password" id="password" placeholder=" " class="input-textarea">
         </div>
-        <div class="button d-flex justify-content-center">
-            <button type="submit" class="btn btn-primary">Login</button>
+        <div class="login-signup-btn-container">
+            <button type="submit" class="login-signup-btn">Login</button>
         </div>
     </form>
 </div>

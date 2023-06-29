@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #EFF1F5;
+    color: #4C4F69;
+}
+
+/* navbar */
+
+.navbar{
+    padding: 1rem 1.25rem;
+    background-color: #A6ADC8;
+    color: #1E1E2E;
+    /* outline: 1px solid black; */
+}
+
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.brand-logo{
+    height: 30px;
+    margin-right: 0.5rem;
+}
+
+.title{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.navbar-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-list{
+    display: flex;
+}
+
+.nav-item{
+    margin: 0 0.5rem;
+    list-style-type: none;
+}
+
+.nav-link{
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: #111;
+}
+
+/* theme-toggle switch */
+
+.theme-toggle{
+    margin: 0 0.75rem;
+}
+
+.dark {
+    background-color: #292c35;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+  
+.checkbox-label {
+    background-color: #111;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.fa-moon{
+    color: #fff;
+}
+  
+.fa-sun{
+    color: #f39c12;
+}
+  
+.checkbox-label .ball {
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+    transform: translateX(24px);
+}
+
+/* auth page */
+
+.container{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-box{
+    background-color: #fff;
+    /* outline: 1px solid black; */
+    padding: 1.5rem 5rem;
+    border-radius: 6px;
+    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%,  
+    100%, 0.075),
+    /* shadow ring */
+    0 0 0 1px hsla(0, 0%, 0%, 0.05),
+    /* multiple soft shadows */
+    0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
+    0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
+    0 3.5px 6px hsla(0, 0%, 0%, 0.09);
+}
+
+.auth-box-title{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.input-field{
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.75rem;
+}
+
+.input-textarea{
+    padding: 0.25rem 0.5rem;
+    border: 2px solid #9BA4B5;
+    border-radius: 3px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.login-signup-btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+.login-signup-btn{
+    margin: 1.15rem 0;
+    padding: 0.5rem 1.25rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    color: #111;
+    background-color: #D8D8D8;
+    box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.5) ;
+}
+
+.login-signup-btn:hover{
+    transform: translateY(-3px);
+}
+
+/* alert message */
+
+.alert{
+    width: 25vw;
+    margin: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    right: 0;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 6px;
+    /* outline: 1px solid black;   */
+}
+
+.alert-success{
+    background-color: #5cb85c;
+}
+
+.alert-danger{
+    background-color: #d9534f;
+}
+
+.btn-close{
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: inherit;
+}
+
+.fa-xmark:hover{
+    color: #111;
+}
