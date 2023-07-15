@@ -1,22 +1,32 @@
 {% extends "base.html" %}
-{% block title%}Login{% endblock %}
+{% block title%}
+Login
+{% endblock %}
 
 {% block content %}
 
 <div class="auth-box">
     <form action="" method="POST">
-        <h1 class="auth-box-title">Login</h1>
-        <div class="input-field">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Enter Your Email Here" class="input-textarea">
-        </div>
-        <div class="input-field">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" placeholder=" " class="input-textarea">
-        </div>
+        <h1 class="heading__title">Login</h1>
+            <label class="form__label" for="email">Email</label>
+            <input class="form__input"
+              type="text" 
+              id="email" 
+              name="email"
+              size="30"
+              required>
+            <label class="form__label" for="password">Password</label>
+            <input class="form__input"
+              type="password" 
+              id="password" 
+              name="password"
+              size="30"
+              required>
         <div class="login-signup-btn-container">
-            <button type="submit" class="login-signup-btn">Login</button>
-        </div>
+          <button type="submit" class="button"><span>Login</span></button>
+        </div><br>
+        <span>Wanna Hangout<span>
+          <button type="submit" class="button"><span>Sign Up</span></button>
     </form>
 </div>
 

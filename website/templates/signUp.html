@@ -5,29 +5,43 @@
 
 <div class="auth-box">
     <form action="" method="POST">
-        <h1 class="auth-box-title">Sign Up</h1>
-        <div class="input-field">
-            <label for="firstName">First Name</label>
-            <input type="text" name="name" id="name" placeholder="Your name" class="input-textarea">
-        </div>
-        <div class="input-field">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Enter Your Email Here" class="input-textarea">
-        </div>
-        <div class="input-field">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" placeholder="Enter Password" class="input-textarea">
-        </div>
-        <div class="input-field">
-            <label for="confirm-password">Confirm Password</label>
-            <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" class="input-textarea">
-        </div>
+        <h1 class="heading__title">Sign Up</h1>
+            <label class="form__label" for="name">Name</label>
+            <input class="form__input"
+              type="text" 
+              id="name" 
+              name="name"
+              placeholder="Enter your name"
+              size="30"
+              required>
+
+            <label class="form__label" for="name">Email</label>
+            <input class="form__input"
+              type="text" 
+              id="email" 
+              name="email"
+              size="30"
+              placeholder="Enter your Email Here"
+              required>
+
+            <label class="form__label" for="password">Password</label>
+            <input class="form__input"
+              type="text" 
+              id="password" 
+              name="password"
+              size="30"
+              required>
+
+            <label class="form__label" for="password">Confirm Password</label>
+            <input class="form__input"
+              type="text" 
+              id="confirm-password" 
+              name="confirm-password"
+              size="30"
+              required>
+
         <div class="login-signup-btn-container">
-            <button type="submit" class="login-signup-btn">Sign Up</button>
-        </div>
-        <div class="button d-flex justify-content-center">
-          <a href="github_login"> Sign Up with github</a>
-            <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+            <button type="submit" class="button"><span>Sign Up</span></button>
         </div>
     </form>
 </div>
